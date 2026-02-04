@@ -1,3 +1,5 @@
+import math
+
 # Write a program that:
 #
 # 1. Calculates the age using the given data (current_year – the current year,
@@ -30,3 +32,14 @@ user_surname = 'Smith'
 # code 2 data
 x = 152
 y = 132
+
+age = current_year - year_of_birth
+
+code_2 = int((x % y * 13) ** 0.5)
+
+# code_2 = math.sqrt(x % y * 13)
+
+code = code_1 + "-" + str(code_2) + "-" + str(code_3)
+
+print("Hello " + user_name + " " + user_surname + ". You are " + str(age) +
+      " years old. Your secret code is " + code + ".")
